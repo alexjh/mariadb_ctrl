@@ -39,6 +39,7 @@ type StartManager struct {
 	StateFileLocation string   `yaml:"StateFileLocation" validate:"nonzero"`
 	ClusterIps        []string `yaml:"ClusterIps" validate:"nonzero"`
 	MyIP              string   `yaml:"MyIP" validate:"nonzero"`
+	ConnectionTimeout int      `yaml:"ConnectionTimeout" validate:"nonzero"`
 }
 
 type Upgrader struct {
